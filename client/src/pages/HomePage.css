@@ -1,0 +1,341 @@
+/* ---------- HomePage Grundlayout ---------- */
+.home-page {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* ---------- Allgemeine Section Container ---------- */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.section-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  opacity: 0.9;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+/* ---------- CTA Buttons ---------- */
+.cta-button {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  text-decoration: none;
+  border: 2px solid var(--text-color);
+  border-radius: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+}
+
+.cta-button:hover {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(31, 31, 31, 0.15);
+}
+
+/* ---------- Hero Section ---------- */
+.hero-section {
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero-image-placeholder {
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  border: 3px solid var(--text-color);
+  border-radius: 40px;
+  background: linear-gradient(135deg, 
+    #8B4513 0%, 
+    #D2691E 25%, 
+    #CD853F 50%, 
+    #DEB887 75%, 
+    #F5DEB3 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(31, 31, 31, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--bg-color);
+}
+
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  opacity: 0.95;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- Reservierung Section ---------- */
+.reservation-section {
+  padding: 6rem 0;
+  background-color: var(--bg-color);
+}
+
+/* ---------- Gutschein Section ---------- */
+.voucher-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, 
+    var(--bg-color) 0%, 
+    rgba(31, 31, 31, 0.05) 100%);
+}
+
+.voucher-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.voucher-card {
+  background: var(--bg-color);
+  border: 2px solid var(--text-color);
+  border-radius: 40px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+
+.voucher-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(31, 31, 31, 0.15);
+}
+
+.voucher-image-placeholder {
+  width: 100%;
+  height: 200px;
+  border: 2px solid var(--text-color);
+  border-radius: 30px;
+  background: linear-gradient(135deg, 
+    #FFD700 0%, 
+    #FFA500 25%, 
+    #FF8C00 50%, 
+    #FF6347 75%, 
+    #DC143C 100%);
+  margin-bottom: 1.5rem;
+}
+
+.voucher-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.voucher-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.voucher-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--text-color);
+  display: block;
+}
+
+/* ---------- Produktgalerie Section ---------- */
+.gallery-section {
+  padding: 6rem 0;
+  background-color: var(--bg-color);
+}
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.gallery-item {
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-image-placeholder {
+  width: 100%;
+  height: 250px;
+  border: 2px solid var(--text-color);
+  border-radius: 30px;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease-out;
+}
+
+/* Verschiedene Farbverläufe für Produktbilder */
+.gallery-item:nth-child(1) .gallery-image-placeholder {
+  background: linear-gradient(135deg, #4B0000 0%, #8B0000 50%, #CD853F 100%);
+}
+
+.gallery-item:nth-child(2) .gallery-image-placeholder {
+  background: linear-gradient(135deg, #228B22 0%, #32CD32 50%, #ADFF2F 100%);
+}
+
+.gallery-item:nth-child(3) .gallery-image-placeholder {
+  background: linear-gradient(135deg, #8B008B 0%, #DA70D6 50%, #FFB6C1 100%);
+}
+
+.gallery-item:nth-child(4) .gallery-image-placeholder {
+  background: linear-gradient(135deg, #00CED1 0%, #87CEEB 50%, #F0F8FF 100%);
+}
+
+.gallery-item:nth-child(5) .gallery-image-placeholder {
+  background: linear-gradient(135deg, #FF4500 0%, #FF6347 50%, #FFA07A 100%);
+}
+
+.gallery-item:nth-child(6) .gallery-image-placeholder {
+  background: linear-gradient(135deg, #4169E1 0%, #6495ED 50%, #B0C4DE 100%);
+}
+
+.gallery-item h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--text-color);
+}
+
+/* ---------- Mobile Responsive ---------- */
+@media (max-width: 968px) {
+  .section-container {
+    padding: 0 1rem;
+  }
+  
+  .hero-container {
+    padding: 0 1rem;
+  }
+  
+  .hero-image-placeholder {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .voucher-cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .product-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .voucher-section,
+  .reservation-section,
+  .gallery-section {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image-placeholder {
+    height: 50vh;
+    min-height: 350px;
+  }
+  
+  .voucher-card {
+    padding: 2rem;
+  }
+  
+  .voucher-image-placeholder {
+    height: 150px;
+  }
+  
+  .gallery-image-placeholder {
+    height: 200px;
+  }
+  
+  .product-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .cta-button {
+    padding: 1.2rem 2.5rem;
+  }
+}
